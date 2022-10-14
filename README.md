@@ -1,6 +1,6 @@
 # candidate-tester
 
-This Repo is intended to reply to the new Frontend developer (Native & Web) test on the steps to follow for completing the [Norigin Media testing task](https://github.com/NoriginMedia/candidate-tester).
+This Repo is intended to reply to the new Frontend developer (Native & Web) test on the steps to follow for completing the [Norigin Media testing task].
 
 ## Project Setup
 
@@ -21,6 +21,8 @@ npm run start
 ```sh
 npm run dev
 ```
+
+### Server should start at [http://127.0.0.1:5173/](http://127.0.0.1:5173/)
 
 ### Compile and Minify for Production
 
