@@ -1,0 +1,13 @@
+.nav-item .nav-link {
+  display: contents;
+}
+
+@media screen and (max-width: 720px) {
+  .nav-pills {
+    flex-flow: row;
+  }
+  .container, .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
