@@ -1,14 +1,6 @@
 # candidate-tester
 
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+This Repo is intended to reply to the new Frontend developer (Native & Web) test on the steps to follow for completing the [Norigin Media testing task](https://github.com/NoriginMedia/candidate-tester).
 
 ## Project Setup
 
@@ -16,7 +8,7 @@ See [Vite Configuration Reference](https://vitejs.dev/config/).
 npm install
 ```
 
-### Copy .env.example content to a .env file
+### Copy .env.example content to a .env file in the root folder
 
 ### Run mock api server
 
