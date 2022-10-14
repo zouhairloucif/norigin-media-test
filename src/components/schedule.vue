@@ -1,5 +1,11 @@
 <template>
-  <b-card bgVariant="black" borderVariant="secondary"  :class="{ active: isCurrentSchedule(schedule) }" :style="`height: 100px; min-width: ${getScheduleWidth(schedule)}`">
+  <b-card
+    bgVariant="black"
+    borderVariant="secondary"
+    class="schedule"
+    :class="{ active: isCurrentSchedule(schedule) }"
+    :style="`height: 100px; min-width: ${getScheduleWidth(schedule)}`"
+    @click="navigateTo(schedule.id)">
     <b-card-text>
       <p class="mb-0">{{ schedule.title }}</p>
       <date-to-time :iso-date="schedule.start" format="HH:MM" />
@@ -27,11 +33,20 @@ export default {
       const now = moment().format('YYYY-MM-DDThh:mm:ssZ');
       return moment(now).isBetween(schedule.start, schedule.end);
     }
+  },
+  methods: {
+    navigateTo(id) {
+      this.$router.push(`/detail/${id}`);
+    }
   }
 }
 </script>
 <style scoped>
-  .card.active {
-    background-color: #373737 !important;
+  .schedule:hover {
+    filter: contrast(0.8);
+    cursor: pointer;
+  }
+  .schedule.active {
+      background-color: #373737 !important;
   }
 </style>
